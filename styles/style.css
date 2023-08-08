@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#first-bg,
+#second-bg,
+#fourth-bg {
+  position: fixed;
+  right: 0; 
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+#third-screen {
+  background-image: url("/images/GettyImages-1371084005.png");
+  background-position: center;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
