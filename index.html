@@ -71,6 +71,37 @@
 
     <!-- toggle menu -->
     <section id="toggle-menu">
+      <div id="menu-area">
+        <img src="images/logo.png" alt="" />
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Why 580?</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Submit a Pitch</a></li>
+        </ul>
+        <div>
+          <p>678.451.2291</p>
+          <small>
+            2500 Clean Water Court,<br />
+            Buford, GA 30519
+          </small>
+          <div class="social-icons">
+            <a href="#"><img src="images/linkedin.png" alt="" /></a>
+            <a href="#"><img src="images/bxl-twitter.png" alt="" /></a>
+            <a href="#"><img src="images/facebook.png" alt="" /></a>
+            <a href="#"
+              ><img src="images/Icon simple-instagram.png" alt=""
+            /></a>
+          </div>
+          <small>
+            Copyright © 2023 5840 Holdings. All Rights Reserved.<br />
+            Privacy Policy<br />
+            Site Design: Mighty 8th
+          </small>
+        </div>
+      </div>
+
       <button id="btn-close-toggle">
         <img src="images/close.png" alt="" />
       </button>
@@ -242,9 +273,11 @@
       document.getElementById("menu-btn").addEventListener("click", () => {
         document.getElementById("toggle-menu").style.width = "100vw";
       });
-      document.getElementById("btn-close-toggle").addEventListener("click", () => {
-        document.getElementById("toggle-menu").style.width = "0vw";
-      });
+      document
+        .getElementById("btn-close-toggle")
+        .addEventListener("click", () => {
+          document.getElementById("toggle-menu").style.width = "0vw";
+        });
     </script>
   </body>
 </html>

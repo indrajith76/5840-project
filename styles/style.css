@@ -37,28 +37,80 @@
 }
 
 /* toggle menu */
-#toggle-menu { 
-    background-color: #333B45;
-    position: fixed;
-    top: 0;
-    bottom: 0; 
-    width: 100vw;
-    z-index: 60;
-    transition: .5s;
-    overflow: hidden;
+#toggle-menu {
+  background-color: #333b45;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 0vw;
+  z-index: 60;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 #btn-close-toggle img {
-    width: 50px;
+  width: 50px;
 }
 #btn-close-toggle {
-    background: transparent;
-    border: none;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
+#menu-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 90px;
+}
+
+#menu-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menu-area li {
+  list-style: none;
+  border: 1px solid #64768D;
+  width: 250px;
+  padding: 10px 5px 10px 20px;
+}
+#menu-area ul a{
+    color: #ffc588 !important;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+}
+
+#menu-area p {
+    color: #A6C5DB;
+    font-size: 36px;
+}
+
+#menu-area small {
+    color: #A6C5DB;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-top: 1px solid #A6C5DB;
+    border-bottom: 1px solid #A6C5DB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.social-icons img { 
+    height: 45px;
+}
+
+/* first screen */
 
 .logo {
   width: 115px;
@@ -279,7 +331,7 @@
 }
 
 #faq-list li span {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #faq-list li {
