@@ -1,25 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-}
-
-#first-bg,
-#second-bg,
-#fourth-bg {
-  position: fixed;
-  right: 0; 
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
-
-#third-screen {
-  background-image: url("/images/GettyImages-1371084005.png");
-  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper-pagination {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+/* .swiper-pagination-bullets */
+.swiper-pagination-bullet-active {
+  background-color: #ffc588;
+  width: 10px;
+  height: 10px;
+  outline: solid 1px black;
+  outline-offset: -2px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  width: 153px;
+  background-color: rgb(51, 59, 69, 0.8);
+  height: 100%;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+  filter: drop-shadow(3px 0px 3px #000000);
+}
+
+/* toggle menu */
+#toggle-menu { 
+    background-color: #333B45;
+    position: fixed;
+    top: 0;
+    bottom: 0; 
+    width: 100vw;
+    z-index: 60;
+    transition: .5s;
+    overflow: hidden;
+}
+
+#btn-close-toggle img {
+    width: 50px;
+}
+#btn-close-toggle {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.logo {
+  width: 115px;
+  margin-top: 60px;
+}
+
+.nav-hr {
+  height: 1px;
+  background: #000;
+  width: 100%;
+}
+
+#menu-btn span {
+  height: 3px;
+  background: #86a7bf;
+  transition: 0.5s ease;
+}
+#menu-btn span:first-child,
+#menu-btn span:last-child {
+  width: 72px;
+}
+#menu-btn span:nth-child(2) {
+  width: 52px;
+}
+
+#menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+#menu-btn:hover span {
+  background: #ffc588;
+}
+
+#menu-btn:hover span:nth-child(1) {
+  width: 52px;
+}
+#menu-btn:hover span:nth-child(2) {
+  width: 72px;
+}
+#menu-btn:hover span:nth-child(3) {
+  width: 52px;
+}
+
+.nav-bottom-img {
+  width: 350px;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+#first-bg,
+#second-bg,
+#fourth-bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------
+    first screen
+--------------------
+ */
+
+#first-screen > .banner-texts {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  bottom: 154px;
+  width: 559px;
+  height: 208px;
+  padding: 20px 0 0 0;
+}
+
+.banner-texts h3 {
+  /* font-family: 'PT Serif'; */
+  color: #a6c5db;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 45px;
+}
+
+.banner-texts span {
+  color: #ffc588;
+}
+
+.banner-texts p {
+  color: #a6c5db;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 45px;
+}
+
+.banner-texts hr {
+  background: #ffc588;
+  height: 2px;
+}
+
+#first-screen > img {
+  object-fit: contain;
+  object-position: bottom;
+  z-index: 50;
+  width: 93%;
+  margin-bottom: 0;
+  margin-left: 250px;
+  opacity: 30%;
+  mix-blend-mode: overlay;
+}
+
+/* --------------------
+    Second screen
+-----------------------
+ */
+#seond-screen {
+  background-image: url("/images/Astro.png");
+  background-size: cover;
+}
+
+#second-bg {
+  mix-blend-mode: overlay;
+  opacity: 24%;
+}
+
+#seond-screen img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.seond-screen-text {
+  position: absolute;
+  top: 100px;
+  left: 234px;
+  width: 492px;
+  text-align: left;
+}
+
+.seond-screen-text h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffc588;
+}
+.seond-screen-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a6c5db;
+}
+
+/* --------------------
+    Third screen
+-----------------------
+ */
+
+#third-screen {
+  background-image: url("/images/GettyImages-1371084005.png");
+  background-position: center;
+  padding-left: 200px;
+  padding-right: 80px;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+#third-screen h3 {
+  font-size: 38px;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+/* --------------------
+    4th screen
+-----------------------
+ */
+
+#fourth-bg {
+  mix-blend-mode: overlay;
+  opacity: 95%;
+}
+
+#fourth-screen {
+  background-color: #333b45;
+}
+
+/* --------------------
+        4th screen
+----------------------- */
+
+#fifth-screen > img {
+  object-fit: contain;
+  /* object-position: bottom; */
+  z-index: 20;
+  width: 55%;
+  position: absolute;
+  left: 120px;
+  bottom: -200px;
+  opacity: 3%;
+}
+
+#fifth-screen {
+  background: #333b45;
+}
+
+#faq-list {
+  list-style: none;
+  color: #cfd9db;
+}
+
+#faq-list li span {
+    font-size: 25px;
+}
+
+#faq-list li {
+  display: flex;
+  justify-items: center;
+  gap: 80px;
+  border-bottom: 1px solid #cfd9db;
+  padding: 20px 0;
+  cursor: pointer;
 }
