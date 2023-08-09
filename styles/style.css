@@ -20,6 +20,10 @@
   outline-offset: -2px;
 }
 
+.swiper-slide {
+  padding-left: 220px;
+}
+
 #sidebar {
   position: fixed;
   top: 0;
@@ -67,47 +71,47 @@
 }
 
 #menu-area ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #menu-area li {
   list-style: none;
-  border: 1px solid #64768D;
+  border: 1px solid #64768d;
   width: 250px;
   padding: 10px 5px 10px 20px;
 }
-#menu-area ul a{
-    color: #ffc588 !important;
-    text-decoration: none;
-    display: block;
-    font-size: 30px;
+#menu-area ul a {
+  color: #ffc588 !important;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
 }
 
 #menu-area p {
-    color: #A6C5DB;
-    font-size: 36px;
+  color: #a6c5db;
+  font-size: 36px;
 }
 
 #menu-area small {
-    color: #A6C5DB;
-    font-size: 14px;
+  color: #a6c5db;
+  font-size: 14px;
 }
 
 .social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    border-top: 1px solid #A6C5DB;
-    border-bottom: 1px solid #A6C5DB;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-top: 1px solid #a6c5db;
+  border-bottom: 1px solid #a6c5db;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.social-icons img { 
-    height: 45px;
+.social-icons img {
+  height: 45px;
 }
 
 /* first screen */
@@ -193,7 +197,7 @@
 }
 
 .banner-texts h3 {
-  /* font-family: 'PT Serif'; */
+  font-family: "PT Serif";
   color: #a6c5db;
   font-size: 40px;
   font-weight: 400;
@@ -235,6 +239,8 @@
 #seond-screen {
   background-image: url("/images/Astro.png");
   background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #second-bg {
@@ -249,9 +255,6 @@
 }
 
 .seond-screen-text {
-  position: absolute;
-  top: 100px;
-  left: 234px;
   width: 492px;
   text-align: left;
 }
@@ -275,21 +278,34 @@
 #third-screen {
   background-image: url("/images/GettyImages-1371084005.png");
   background-position: center;
-  padding-left: 200px;
-  padding-right: 80px;
   flex-direction: column;
   text-align: center;
-  padding-top: 100px;
+  padding-right: 50px;
 }
 #third-screen h3 {
   font-size: 38px;
+  margin-bottom: 50px;
+}
+
+#third-screen img {
+  width: 50% !important;
+  height: auto !important;
+  mix-blend-mode: multiply;
+}
+
+.img-border {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .companies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 20px;
+  align-items: center;
+  grid-row-gap: 150px;
 }
 
 /* --------------------
@@ -304,7 +320,20 @@
 
 #fourth-screen {
   background-color: #333b45;
+  /* justify-content: flex-start;
+  align-items: flex-start; */ 
 }
+
+#fourth-screen-comma-bg {
+  background-image: url("images/comma.png");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+
+/* #fourth-screen img {
+    width: 40%;
+    margin-top: 50px;
+} */
 
 /* --------------------
         4th screen
